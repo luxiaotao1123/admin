@@ -13,3 +13,18 @@ server:
   port: 8472
   tomcat:
     uri-encoding: UTF-8
+
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  application:
+    id: ts_consumer_admin
+    name: ts_consumer_admin
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: -1
+  consumer:
+    check: false
+    timeout: 60000
+    retries: 0

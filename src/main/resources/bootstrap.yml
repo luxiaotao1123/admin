@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      profile: ${spring.profiles.active}
+      label: master
+      uri: http://47.99.34.109:11111/
+      fail-fast: true
+
+logging:
+  file: /logs/t3-admin

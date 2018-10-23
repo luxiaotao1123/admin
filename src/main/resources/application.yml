@@ -8,6 +8,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: xltys1995
+
 server:
   port: 8472
-
+  tomcat:
+    uri-encoding: UTF-8

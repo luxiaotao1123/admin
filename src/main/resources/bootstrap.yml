@@ -1,10 +1,11 @@
-spring:
-  cloud:
-    config:
-      profile: ${spring.profiles.active}
-      label: master
-      uri: http://47.99.34.109:11111/
-      fail-fast: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.99.59.166:8761/eureka/
+  instance:
+    prefer-ip-address: true
+  healthcheck:
+    enabled: true
 
 logging:
   file: /logs/t3-admin
